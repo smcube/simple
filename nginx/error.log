@@ -1,0 +1,4 @@
+2020/02/05 15:16:01 [emerg] 1#0: host not found in upstream "php-fpm" in /etc/nginx/sites-enabled/default:12
+2020/02/05 15:24:19 [emerg] 1#0: host not found in upstream "php-fpm" in /etc/nginx/sites-enabled/default:12
+2020/02/05 18:07:56 [emerg] 1#0: host not found in upstream "php-fpm" in /etc/nginx/sites-enabled/default:12
+2020/02/05 18:11:08 [emerg] 1#0: host not found in upstream "php-fpm" in /etc/nginx/sites-enabled/default:12
