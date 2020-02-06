@@ -1,23 +1,6 @@
 version: "3.7"
 services:
-
-  # nginx:
-  #   image: tutum/nginx
-  #   ports:
-  #     - "80:80"
-  #   links:
-  #     - php
-  #   volumes:
-  #     - ./nginx/default:/etc/nginx/sites-available/default
-  #     - ./nginx/default:/etc/nginx/sites-enabled/default
-
-  #     - ./nginx/access.log:/var/log/nginx/access.log
-  #     - ./nginx/error.log:/var/log/nginx/error.log
-  #   depends_on:
-  #     - php
-
   php:
-    # image: php:7.2.2-fpm
     image: php
     ports:
       - 8000:8000
@@ -30,14 +13,3 @@ services:
       - serve
       - --host=0.0.0.0
       - --port=8000
-
-  # php-fpm:
-  #   build:
-  #     context: .
-  #     dockerfile: .php-fpm/Dockerfile
-  #   ports:
-  #     - "9000:9000"
-  #   volumes:
-  #     - ./public:/application/public
-  #   depends_on:
-  #     - mysql
